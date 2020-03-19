@@ -24,6 +24,7 @@
 	<modules>
 		<module>user</module>
 		<module>eureka-server</module>
+		<module>status</module>
 	</modules>
 
 	<dependencies>

@@ -1,0 +1,23 @@
+eureka:
+  client:
+    fetchRegistry: false #유레카 서버로부터 서버리스트를 받아올지 여부
+    registerWithEureka: true #유레카 서버에 현재 로컬을 서비스로 등록할지 여부
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #유레카 서버의 주소
+    
+management:
+  endpoint:
+    restart:
+      enabled: true
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+server:
+  port: 8083
+spring:
+  application:
+    name: status-service
+    
