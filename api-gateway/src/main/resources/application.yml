@@ -58,6 +58,7 @@ status-service:
   ribbon:
     ConnectTimeout: 13000 #게이트웨이와 서버간의 연결 및 읽기 시간 설정
     ReadTimeout: 13000
+    listOfServers : status-service:8083, status-service:8084
 
 #status-service:
 #  ribbon:

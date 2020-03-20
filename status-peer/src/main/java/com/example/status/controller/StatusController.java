@@ -13,10 +13,10 @@ public class StatusController {
 
 	@Value("${spring.application.name}")
 	private String appName;
-
+	
 	@Value("${server.port}")
 	private int port;
-	
+
 	@RequestMapping("/day")
 	public Map<String, Object> getDayStatus(){
 		Map<String, Object> resultMap = new HashMap<String, Object>();
@@ -25,7 +25,6 @@ public class StatusController {
 		resultMap.put("msg", "response success");
 		resultMap.put("appName", appName);
 		resultMap.put("port", port);
-
 		return resultMap;
 	}
 }
