@@ -25,6 +25,7 @@
 		<module>user</module>
 		<module>eureka-server</module>
 		<module>status</module>
+		<module>api-gateway</module>
 	</modules>
 
 	<dependencies>

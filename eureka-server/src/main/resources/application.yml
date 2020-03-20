@@ -8,11 +8,3 @@ eureka:
   server:
     waitTimeInMsWhenSyncEmpty: 0
     response-cache-update-interval-ms: 1000 #유레카 서버의 캐시 업데이트 주기
-
-    
-spring:
-  application:
-    name: eureka
-  cloud:
-    config:
-      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
