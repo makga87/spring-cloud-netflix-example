@@ -27,6 +27,8 @@
 		<module>status</module>
 		<module>api-gateway</module>
 		<module>status-peer</module>
+		<module>platform-connector</module>
+		<module>hura-platform</module>
 	</modules>
 
 	<dependencies>
