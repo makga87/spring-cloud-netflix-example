@@ -20,4 +20,8 @@ server:
 spring:
   application:
     name: user-service
-    
+  zipkin:
+    base-url: http://localhost:9411 # zipkin 서버
+  sleuth:
+    sampler:
+      probability: 1.0 # 1초에 유입되는 request에 대해 얼마만큼의 비율로 수집할지 결정 (1 = 100%)        

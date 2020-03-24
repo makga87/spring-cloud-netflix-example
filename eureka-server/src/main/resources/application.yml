@@ -7,4 +7,4 @@ eureka:
     fetchRegistry: false
   server:
     waitTimeInMsWhenSyncEmpty: 0
-    response-cache-update-interval-ms: 1000 #유레카 서버의 캐시 업데이트 주기
+    response-cache-update-interval-ms: 10000 #유레카 서버의 캐시 업데이트 주기

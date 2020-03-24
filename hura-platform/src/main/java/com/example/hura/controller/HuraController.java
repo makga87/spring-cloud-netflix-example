@@ -20,7 +20,6 @@ public class HuraController {
 			requestCnt ++;
 			return "요청 성공";
 		} else {
-			Thread.sleep(3000);
 			requestCnt ++;
 			throw new RuntimeException();
 		}
