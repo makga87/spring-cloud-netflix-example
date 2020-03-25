@@ -54,7 +54,7 @@
 
 - 추가된 platform-connector, hura-platform 모듈을 import 후, 실행해 줍니다.
 - api-gateway를 통하여, platform-connector쪽으로 5회이상 요청을 보내며, 서킷브레이커의 활성화를 확인합니다.
-
+- (필수) api-gateway의 application.yml 중, eureka.client.service-url.registry-fetch-interval-seconds 값을 변경 후, 테스트 바랍니다.
 
 
 
