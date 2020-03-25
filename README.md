@@ -58,7 +58,7 @@
 
 
 
-### 7. step5 : zipkin, 로 분산 시스템 로깅해보기
+### 7. step5 : zipkin, sleuth 로 분산 시스템 로깅해보기
     git checkout step5
 - zipkin 적용을 위해, 공식 사이트의 가이드를 따릅니다. [zipkin 공식홈페이지-quickstart](https://zipkin.io/pages/quickstart.html)
 - 지금까지 등록된 모듈 중, 하나를 택하여 요청전문을 보낸 후, http://localhost:9411 로 접속하여, 로깅된 내용을 확인합니다.
