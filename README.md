@@ -4,6 +4,13 @@
 - 작업예제가 단순하고, 미흡점이 많습니다. 기능 동작의 참조용 정도로 체크하시면 될 것 같습니다.
 
 
+
+
+## @각 step 들마다 작성이 완료된 코드의 값이 다르므로, step 변경 시, 각 모듈을 재기동 해주시는 것이 좋습니다.
+
+
+
+
 ### 1. git으로 현재 repository를 clone 한다.
     git clone https://github.com/makga87/spring-cloud-netflix-example.git
 
