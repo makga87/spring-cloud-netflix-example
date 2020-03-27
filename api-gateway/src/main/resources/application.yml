@@ -53,7 +53,7 @@ zuul:
        path: /platform/**
        strip-prefix: false
   sensitive-headers: '' # 민감한 헤더 정보 입력, 라우팅 시, 제거 설정
-  retryable: true
+#  retryable: true
 
 user-service:
   ribbon:
