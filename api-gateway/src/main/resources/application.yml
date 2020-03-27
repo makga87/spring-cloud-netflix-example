@@ -2,7 +2,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/ #유레카 서버의 주소
-    registry-fetch-interval-seconds: 1000 #유레카 클라이언트 레지스트리를 받아오는 주기
+    registry-fetch-interval-seconds: 10 #유레카 클라이언트 레지스트리를 받아오는 주기
     
 management: #actuator의 사용 관련 설정
   endpoint:
@@ -26,9 +26,6 @@ spring:
     name: api-gateway
     
 zuul:
-  host:
-    connect-timeout-millis: 13000
-    socket-timeout-millis: 13000
   routes:
     user-service: #클라이언트의 서비스 아이디
       path: /user/** 
@@ -46,19 +43,19 @@ zuul:
 
 user-service:
   ribbon:
-    ConnectTimeout: 13000 #게이트웨이와 서버간의 연결 및 읽기 시간 설정
-    ReadTimeout: 13000
+    - ConnectTimeout: 13000 #게이트웨이와 서버간의 연결 및 읽기 시간 설정
+    - ReadTimeout: 13000
         
 customer-service: 
   ribbon:
-    ConnectTimeout: 13000 #게이트웨이와 서버간의 연결 및 읽기 시간 설정
-    ReadTimeout: 13000
+    - ConnectTimeout: 13000 #게이트웨이와 서버간의 연결 및 읽기 시간 설정
+    - ReadTimeout: 13000
 
 status-service: 
   ribbon:
-    ConnectTimeout: 13000 #게이트웨이와 서버간의 연결 및 읽기 시간 설정
-    ReadTimeout: 13000
-    listOfServers : status-service:8083, status-service:8084
+    - ConnectTimeout: 13000 #게이트웨이와 서버간의 연결 및 읽기 시간 설정
+    - ReadTimeout: 13000
+    - listOfServers : status-service:8083, status-service:8084
 
 #status-service:
 #  ribbon:
